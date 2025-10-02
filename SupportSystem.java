@@ -7,6 +7,10 @@
  * and an object of class Responder to generate responses. It contains a loop
  * that repeatedly reads input and generates output until the users wants to 
  * leave.
+ * It interacts with the user via text input/output and provides automated responses.
+ * 
+ * @author Eimaan Akhtar
+ * @version 2.0
  * 
  * @author  Michael Kölling and David J. Barnes
  * @version 7.2

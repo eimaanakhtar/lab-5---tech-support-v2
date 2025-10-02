@@ -1,11 +1,17 @@
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Map;
+import java.util.*;
 
 /**
  * The responder class represents a response generator object. It is used
  * to generate an automatic response. This is the second version of this 
  * class. This time, we generate some random behavior by randomly selecting 
  * a phrase from a predefined list of responses.
+ * It interacts with the user via text input/output and provides automated responses.
+ * 
+ * @author Eimaan Akhtar
+ * @version 2.0
  * 
  * @author   Michael Kölling and David J. Barnes
  * @version 7.2
@@ -14,6 +20,8 @@ public class Responder
 {
     private Random randomGenerator;
     private ArrayList<String> responses;
+    private HashMap<String, String> responseMap;
+
 
     /**
      * Construct a Responder
@@ -61,6 +69,11 @@ public class Responder
         responses.add("Could you elaborate on that?");
         responses.add("Have you tried running the app on your phone?");
         responses.add("I just checked StackOverflow - they don't know either.");
+
     }
-}
+    
+    public Map<String, String> getResponseMap(){
+        return responseMap;
+    }
+} 
 
